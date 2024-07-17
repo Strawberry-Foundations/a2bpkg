@@ -1,0 +1,10 @@
+[package]
+name = "a2bpkg"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libspkg = { version = "0.1.4", features = ["binpkg"] }
+tar = "0.4.41"
+debber = "1.0.0"
+rpm = "0.15.0"
