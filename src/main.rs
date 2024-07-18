@@ -1,9 +1,8 @@
-use std::path::Path;
-
 mod args;
 mod utils;
 mod converters;
 
 fn main() {
-    converters::deb::convert2deb(Path::new("testing/tunneled-2.4.0-amd64.deb"));
+    let matches = args::build_cli().get_matches();
+    args::handle_matches(matches);
 }
