@@ -8,3 +8,4 @@ libspkg = { version = "0.1.4", features = ["binpkg"] }
 tar = "0.4.41"
 debber = "1.0.0"
 rpm = "0.15.0"
+clap = "4.5.9"
