@@ -34,9 +34,6 @@ pub fn build_cli() -> Command {
 
 pub fn handle_matches(matches: ArgMatches) {
     match matches.subcommand() {
-        Some(("help", _)) => {
-            println!("help here");
-        }
         Some(("convert", sub_m)) => {
             let archive = sub_m.get_one::<String>("ARCHIVE").unwrap().as_str();
             let package_type = sub_m.get_one::<String>("type").unwrap().as_str();
